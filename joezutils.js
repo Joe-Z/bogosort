@@ -7,15 +7,15 @@ function sortIt()
 		values[i] = +values[i];
 	}
 
-	document.getElementById('result').value = bogoSort({list: values})
+	document.getElementById('result').value = BOGOSORT({list: values})
 }
 
-function length(listObject)
+function LENGTH(listObject)
 {
 	return listObject.list.length;
 }
 
-function shuffle(listObject)
+function SHUFFLE(listObject)
 {
 	var oldList = listObject.list,
 		newList	= [],
@@ -31,7 +31,7 @@ function shuffle(listObject)
 	}
 }
 
-function isSorted(listObject)
+function ISSORTED(listObject)
 {
 	var list = listObject.list;
 
@@ -57,4 +57,14 @@ function swap(listObject, idxOne, idxTwo)
 
 	listObject.list[idxOne] = listObject.list[idxTwo];
 	listObject.list[idxTwo] = oneValue;
+}
+
+function LOG(n)
+{
+	if(n === 1)
+	{
+		return 1;
+	}
+
+	return Math.log(n);
 }
