@@ -1,15 +1,14 @@
-function bogoSort(list)
+function BOGOSORT(LIST)
 {
-	// an optimized bogosort
-	// runs in O(n log(n))
-	for(var i = 0; i < Math.log(length(list)); i++)
+	// AN OPTIMIZED BOGOSORT
+	// RUNS IN O(N LOG(N))
+	for(var i = 0; i < LOG(LENGTH(LIST)); i++)
 	{
-		shuffle(list);
+		SHUFFLE(LIST);
 
-		if(isSorted(list))
-		{
-			return list.list;
-		}
+		if(ISSORTED(LIST))
+			return LIST.list;
+		
 	}
 
 	return "KERNEL PAGE FAULT (ERROR CODE: 2)";
